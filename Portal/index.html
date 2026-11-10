@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNews ID - Portal Berita</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- File CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#beranda">TechNews ID</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#berita">Berita Utama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trending">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#terbaru">Berita Terbaru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+
+        <!-- Headline Utama -->
+        <section class="row mb-5" id="beranda">
+            <div class="col-12">
+                <div class="hero">
+                    <span class="badge bg-primary mb-3">HEADLINE UTAMA</span>
+
+                    <h1>Perkembangan Teknologi AI Mengubah Dunia Digital</h1>
+
+                    <p class="lead mt-3">
+                        Kecerdasan buatan semakin berkembang dan membawa
+                        perubahan besar dalam dunia pendidikan, bisnis,
+                        serta kehidupan sehari-hari.
+                    </p>
+
+                    <a href="#berita" class="btn btn-primary mt-3">
+                        Baca Selengkapnya
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Berita Utama dan Sidebar -->
+        <section class="row g-4 mb-5" id="berita">
+
+            <!-- Kolom Berita Utama -->
+            <div class="col-12 col-lg-8">
+                <h2 class="section-title">Berita Utama</h2>
+
+                <article class="card news-card shadow-sm">
+                    <img
+                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80"
+                        class="card-img-top news-image"
+                        alt="Komponen teknologi komputer">
+
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Teknologi</span>
+
+                        <h3 class="card-title">
+                            Inovasi Teknologi Terbaru Dorong Transformasi Digital
+                        </h3>
+
+                        <p class="text-muted small">
+                            27 Oktober 2026 | Redaksi TechNews ID
+                        </p>
+
+                        <p class="card-text">
+                            Berbagai inovasi teknologi terus dikembangkan
+                            untuk meningkatkan efisiensi kerja dan membantu
+                            masyarakat menjalankan aktivitas digital.
+                            Perkembangan ini juga membuka peluang baru
+                            bagi dunia industri dan pendidikan.
+                        </p>
+
+                        <a href="#terbaru" class="btn btn-outline-primary">
+                            Baca Berita
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Sidebar Trending -->
+            <aside class="col-12 col-lg-4" id="trending">
+                <h2 class="section-title">Trending</h2>
+
+                <div class="card shadow-sm p-3">
+
+                    <div class="trending-item">
+                        <span class="badge bg-danger">01</span>
+                        <h5 class="mt-2">
+                            <a href="#terbaru" class="text-dark text-decoration-none">
+                                AI Generatif Semakin Populer
+                            </a>
+                        </h5>
+                        <p class="text-muted small mb-0">
+                            Teknologi · 5 menit lalu
+                        </p>
+                    </div>
+
+                    <div class="trending-item">
+                        <span class="badge bg-danger">02</span>
+                        <h5 class="mt-2">
+                            <a href="#terbaru" class="text-dark text-decoration-none">
+                                Keamanan Data Menjadi Prioritas
+                            </a>
+                        </h5>
+                        <p class="text-muted small mb-0">
+                            Keamanan Siber · 15 menit lalu
+                        </p>
+                    </div>
+
+                    <div class="trending-item">
+                        <span class="badge bg-danger">03</span>
+                        <h5 class="mt-2">
+                            <a href="#terbaru" class="text-dark text-decoration-none">
+                                Tren Gadget Terbaru Tahun Ini
+                            </a>
+                        </h5>
+                        <p class="text-muted small mb-0">
+                            Gadget · 30 menit lalu
+                        </p>
+                    </div>
+
+                    <div class="trending-item">
+                        <span class="badge bg-danger">04</span>
+                        <h5 class="mt-2">
+                            <a href="#terbaru" class="text-dark text-decoration-none">
+                                Startup Digital Terus Bertumbuh
+                            </a>
+                        </h5>
+                        <p class="text-muted small mb-0">
+                            Bisnis · 1 jam lalu
+                        </p>
+                    </div>
+
+                </div>
+            </aside>
+        </section>
+
+        <!-- Grid Berita Terbaru: 4 Kartu -->
+        <section class="mb-5" id="terbaru">
+            <h2 class="section-title">Berita Terbaru</h2>
+
+            <div class="row g-4">
+
+                <!-- Berita 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card news-card shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top news-image"
+                            alt="Ilustrasi kecerdasan buatan">
+
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Teknologi</span>
+                            <h5 class="card-title">
+                                Kecerdasan Buatan Semakin Canggih
+                            </h5>
+                            <p class="card-text">
+                                AI membantu menyelesaikan pekerjaan dengan
+                                lebih cepat dan efisien.
+                            </p>
+                            <a href="#beranda" class="btn btn-sm btn-outline-primary">
+                                Baca Selengkapnya
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Berita 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card news-card shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top news-image"
+                            alt="Tim bekerja menggunakan teknologi">
+
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Bisnis</span>
+                            <h5 class="card-title">
+                                Startup Digital Kembangkan Inovasi Baru
+                            </h5>
+                            <p class="card-text">
+                                Perusahaan rintisan memanfaatkan teknologi
+                                untuk menghadirkan solusi digital.
+                            </p>
+                            <a href="#berita" class="btn btn-sm btn-outline-primary">
+                                Baca Selengkapnya
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Berita 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card news-card shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top news-image"
+                            alt="Smartphone modern">
+
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Gadget</span>
+                            <h5 class="card-title">
+                                Smartphone Modern Hadir dengan Fitur Baru
+                            </h5>
+                            <p class="card-text">
+                                Fitur terbaru membuat penggunaan smartphone
+                                semakin praktis.
+                            </p>
+                            <a href="#trending" class="btn btn-sm btn-outline-primary">
+                                Baca Selengkapnya
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Berita 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card news-card shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top news-image"
+                            alt="Ilustrasi keamanan siber">
+
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Keamanan</span>
+                            <h5 class="card-title">
+                                Pentingnya Menjaga Keamanan Data Pribadi
+                            </h5>
+                            <p class="card-text">
+                                Pengguna internet perlu melindungi informasi
+                                pribadi dari ancaman siber.
+                            </p>
+                            <a href="#berita" class="btn btn-sm btn-outline-primary">
+                                Baca Selengkapnya
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h4 class="fw-bold">TechNews ID</h4>
+            <p class="mb-2">
+                Portal berita teknologi, inovasi, dan dunia digital.
+            </p>
+            <p class="small text-secondary mb-0">
+                &copy; 2026 TechNews ID. Semua hak dilindungi.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- File JavaScript -->
+    <script src="main.js"></script>
+
+</body>
+</html>

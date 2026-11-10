@@ -1,4 +1,4 @@
-// ===== 1. Mode gelap / terang =====
+// ==== 1. Mode gelap / terang ====
 // Ambil tombol dari HTML berdasarkan id-nya
 const tombolTema = document.getElementById("tombol-tema");
 // Saat tombol diklik, tambah/hapus class "gelap" pada <body>
