@@ -1,0 +1,174 @@
+
+/* ===== 1. Warna ===== */
+:root {
+ --latar: #FFF5D6;
+ --kartu: #FFFEF8;
+ --teks: #493514;
+ --teks-pudar: #927747;
+ --aksen: #E5A000;
+}
+
+/* Mode gelap */
+body.gelap {
+ --latar: #201A0D;
+ --kartu: #302719;
+ --teks: #FFF2CF;
+ --teks-pudar: #C9B78C;
+ --aksen: #FFD15C;
+}
+
+/* ===== 2. Dasar halaman ===== */
+* {
+ box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+ font-family: Arial, sans-serif;
+ line-height: 1.6;
+ background:
+   radial-gradient(ellipse at 10% 5%, rgba(255, 218, 112, 0.35), transparent 35%),
+   radial-gradient(ellipse at 90% 45%, rgba(255, 231, 166, 0.4), transparent 35%),
+   var(--latar);
+ color: var(--teks);
+ transition: background 0.3s, color 0.3s;
+}
+
+/* ===== 3. Bagian atas ===== */
+.header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px 32px;
+}
+
+.logo {
+ margin: 0;
+ color: var(--aksen);
+ font-weight: bold;
+ letter-spacing: 0.5px;
+}
+
+#tombol-tema {
+ padding: 10px 20px;
+ border: 2px solid var(--aksen);
+ border-radius: 30px;
+ background: var(--kartu);
+ color: var(--aksen);
+ cursor: pointer;
+ font-weight: bold;
+ transition: 0.3s;
+}
+
+#tombol-tema:hover {
+ background: var(--aksen);
+ color: #ffffff;
+ transform: translateY(-2px);
+}
+
+/* ===== 4. Isi halaman ===== */
+.isi {
+ max-width: 900px;
+ margin: 0 auto;
+ padding: 0 24px 60px;
+}
+
+.perkenalan {
+ padding: 65px 0 30px;
+}
+
+.perkenalan h1 {
+ font-size: 2.8rem;
+ line-height: 1.2;
+ margin: 0 0 12px;
+ color: var(--teks);
+ letter-spacing: -1px;
+}
+
+.perkenalan p {
+ color: var(--teks-pudar);
+ font-size: 1.1rem;
+ margin: 0;
+}
+
+/* ===== 5. Pencarian ===== */
+#cari {
+ width: 100%;
+ padding: 15px 20px;
+ margin: 8px 0 28px;
+ border: 1px solid rgba(210, 164, 58, 0.35);
+ border-radius: 30px;
+ font-size: 1rem;
+ background: var(--kartu);
+ color: var(--teks);
+ outline: none;
+ box-shadow: 0 5px 18px rgba(160, 117, 29, 0.07);
+ transition: 0.3s;
+}
+
+#cari:focus {
+ border-color: var(--aksen);
+ box-shadow: 0 0 0 4px rgba(229, 160, 0, 0.13);
+}
+
+/* ===== 6. Kartu proyek ===== */
+.daftar-proyek {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+ gap: 24px;
+}
+
+.kartu {
+ display: block;
+ padding: 28px;
+ background: var(--kartu);
+ border: 1px solid rgba(224, 177, 75, 0.2);
+ border-radius: 26px 26px 26px 10px;
+ box-shadow: 0 8px 24px rgba(132, 96, 26, 0.08);
+ color: inherit;
+ text-decoration: none;
+ transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kartu:hover {
+ transform: translateY(-7px);
+ box-shadow: 0 14px 30px rgba(180, 130, 25, 0.17);
+ border-color: rgba(229, 160, 0, 0.5);
+}
+
+.kartu h3 {
+ margin: 0 0 8px;
+ color: var(--aksen);
+ font-size: 1.2rem;
+}
+
+.kartu p {
+ margin: 0;
+ color: var(--teks-pudar);
+}
+
+/* Pesan "tidak ditemukan" disembunyikan dulu */
+.pesan-kosong {
+ display: none;
+ color: var(--teks-pudar);
+}
+
+/* ===== 7. Penyesuaian mode gelap ===== */
+body.gelap {
+ background:
+   radial-gradient(ellipse at 10% 5%, rgba(179, 126, 22, 0.12), transparent 35%),
+   radial-gradient(ellipse at 90% 45%, rgba(179, 126, 22, 0.08), transparent 35%),
+   var(--latar);
+}
+
+body.gelap #cari {
+ border-color: rgba(255, 209, 92, 0.25);
+}
+
+body.gelap .kartu {
+ border-color: rgba(255, 209, 92, 0.13);
+}
+
+body.gelap .kartu:hover {
+ border-color: rgba(255, 209, 92, 0.5);
+}
